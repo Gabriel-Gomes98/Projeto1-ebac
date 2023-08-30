@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NewsLetter - Sua dose diária de informação</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <h1 class="cabecalho-titulo">NewsLetter</h1>
+        <nav class="cabecalho-navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a class="login" href="#">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="conteudo">
+            <h2 class="conteudo-titulo"><strong>Inscreva-se agora</strong><br>na NewsLetter</h2>
+            <p class="conteudo-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus blanditiis exercitationem voluptate ab magnam, ut ratione cum, voluptates amet iusto! Perspiciatis omnis accusamus ipsa consequuntur, nesciunt possimus error? Maiores!</p>
+            <form class="formulario">
+                <input type="text" placeholder="Nome Completo">
+                <input type="email" placeholder="Email">
+                <button class="bt-cadastrar" type="submit" onclick="alert('Cadastro realizado com sucesso!')">Cadastrar</button>  
+            </form>
+        </div>
+        <img src="/imagens/recebendo-email.jpg" alt="Lendo a newsletter">
+    </main>
 </body>
 </html>
