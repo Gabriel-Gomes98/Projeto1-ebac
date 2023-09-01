@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt=br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewsLetter - Sua dose diária de informação</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
+    <title>NewsLetter</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <h1 class="cabecalho-titulo">NewsLetter</h1>
-        <nav class="cabecalho-navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a class="login" href="#">Entrar</a></li>
+    <header id="cabecalho">
+        <h1 id="cabecalho-titulo">NewsLetter</h1>
+        <nav>
+            <ul id="cabecalho-menu">
+                <li><a class="menu-link" href="#">Home</a></li>
+                <li><a class="menu-link" href="#">Sobre</a></li>
+                <li><a class="menu-link" href="#">Contato</a></li>
+                <li><a id="menu-login" href="#">Entrar</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <div class="conteudo">
-            <h2 class="conteudo-titulo"><strong>Inscreva-se agora</strong><br>na NewsLetter</h2>
-            <p class="conteudo-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatibus blanditiis exercitationem voluptate ab magnam, ut ratione cum, voluptates amet iusto! Perspiciatis omnis accusamus ipsa consequuntur, nesciunt possimus error? Maiores!</p>
-            <form class="formulario">
-                <input type="text" placeholder="Nome Completo">
-                <input type="email" placeholder="Email">
-                <button class="bt-cadastrar" type="submit" onclick="alert('Cadastro realizado com sucesso!')">Cadastrar</button>  
-            </form>
-        </div>
-        <img src="/imagens/recebendo-email.jpg" alt="Lendo a newsletter">
-    </main>
+    </header>    
+        <main id="principal">
+            <div id="conteudo">
+                <aside>
+                    <h2 id="conteudo-titulo"><strong>Inscreva-se agora</strong> na NewsLetter</h2>
+                    <p id="conteudo-texto">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum, sequi nesciunt omnis qui dolor minima, deserunt voluptatem voluptatum illum nulla corporis, laboriosam reprehenderit amet dolorem aliquam architecto? Labore, excepturi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolorum.
+                    </p>
+                </aside>
+                <form id="formulario">
+                    <label for="nome">Nome</label>
+                    <input id="nome" class="formulario-input" type="text" name="nome" placeholder="Nome">
+                    <label for="email">Email</label>
+                    <input id="email" class="formulario-input" type="email" name="email" placeholder="Email">
+                    <button id="formulario-button" type="submit" onclick="alert('Cadastro realizado com sucesso!')">Cadastrar</button>
+                </form>
+            </div>
+            <img id="imagem" src="/imagens/recebendo-email.jpg" alt="recebendo-email">
+        </main>
 </body>
 </html>
